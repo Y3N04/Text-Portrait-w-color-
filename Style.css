@@ -1,0 +1,46 @@
+/* Reset styling for full-screen effect */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Wrapper centers everything */
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+  display: grid;
+  place-items: center;
+}
+
+/* Portrait styling */
+.portrait {
+  font-size: clamp(8px, 2vw, 12px); /* Responsive font scaling */
+  line-height: clamp(8px, 2vw, 12px); /* Keeps spacing proportional */
+  background: url("f4dd5c07-203b-4ef9-bcb8-4126992d5a03.jpg") fixed center no-repeat;
+  background-size: contain; /* Keeps the image visible */
+  width: 85vw; /* Slightly increased size */
+  height: 85vh; /* Enlarged but controlled */
+}
+
+/* Text transparency effect */
+.portrait {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .portrait {
+    font-size: clamp(6px, 4vw, 10px); /* Slight adjustment for mobile */
+    line-height: clamp(6px, 4vw, 10px);
+    width: 90vw; /* Expands width slightly */
+    height: 90vh; /* Adjusts height */
+    background-size: contain; /* Keeps image contained */
+  }
+}
+
+
+
