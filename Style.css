@@ -16,8 +16,8 @@ body {
 
 /* Portrait styling */
 .portrait {
-  font-size: clamp(8px, 2vw, 12px); /* Responsive font scaling */
-  line-height: clamp(8px, 2vw, 12px); /* Keeps spacing proportional */
+  font-size: clamp(8px, 2vw, 14px); /* Responsive font scaling */
+  line-height: clamp(8px, 2vw, 14px); /* Keeps spacing proportional */
   background: url("f4dd5c07-203b-4ef9-bcb8-4126992d5a03.jpg") fixed center no-repeat;
   background-size: contain; /* Keeps the image visible */
   width: 85vw; /* Slightly increased size */
@@ -34,8 +34,8 @@ body {
 /* Mobile adjustments */
 @media (max-width: 768px) {
   .portrait {
-    font-size: clamp(6px, 4vw, 10px); /* Slight adjustment for mobile */
-    line-height: clamp(6px, 4vw, 10px);
+    font-size: clamp(6px, 3vw, 10px); /* Slight adjustment for mobile */
+    line-height: clamp(6px, 3vw, 10px);
     width: 90vw; /* Expands width slightly */
     height: 90vh; /* Adjusts height */
     background-size: contain; /* Keeps image contained */
